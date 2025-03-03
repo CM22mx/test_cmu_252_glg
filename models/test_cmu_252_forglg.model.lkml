@@ -38,6 +38,7 @@ explore: countries {}
 
 explore: customer {}
 
+
 explore: day_of_week {}
 
 explore: dept {}
