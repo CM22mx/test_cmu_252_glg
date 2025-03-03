@@ -1,6 +1,6 @@
 view: order_items {
   sql_table_name: demo_db.order_items ;;
-  drill_fields: [id]
+
 
   dimension: id {
     primary_key: yes
@@ -34,9 +34,11 @@ view: order_items {
     type: number
     sql: ${TABLE}.sale_price ;;
   }
-  measure: count {
+
+
+  measure: active_orders_users {
     type: count
-    drill_fields: [id, orders.id, inventory_items.id]
+
   }
   parameter: client_cohort_selection {
     label: "Client Cohort Selection"
